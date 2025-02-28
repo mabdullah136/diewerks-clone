@@ -1,0 +1,91 @@
+.hero-section-wrapper {
+  background-image: url("../../assets/images/heroSection/heroImage.svg");
+  height: 564px;
+  margin: 10px;
+  background-size: cover; /* Ensures it scales properly */
+  background-position: center; /* Centers the image */
+  background-repeat: no-repeat;
+  flex-shrink: 0;
+  border-radius: 5px;
+  display: flex;
+  align-items: end;
+
+  @include breakpoint(1150px) {
+    height: 820px;
+  }
+}
+
+.hero-section-container {
+  display: flex;
+  height: 100%;
+  width: 1400px;
+  padding: 0 20px;
+
+  @include breakpoint(1430px) {
+    padding: 0px;
+  }
+}
+
+.hero-section-content {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  width: auto;
+  max-width: 400px;
+  justify-content: end;
+  padding-bottom: 20px;
+
+  @include breakpoint(768px) {
+    justify-content: center;
+  }
+
+  &__span {
+    font-size: $font-size-small;
+    font-weight: $font-weight-bold;
+    color: $color-white;
+
+    @include breakpoint(1150px) {
+      font-size: $font-size-medium;
+    }
+  }
+
+  &__title {
+    font-family: $germania-font;
+    font-size: $font-size-h1-mobile;
+    font-weight: $font-weight-h1-mobile;
+    color: $color-white;
+    margin: 10px 0;
+
+    @include breakpoint(1150px) {
+      font-size: $font-size-h4-desktop;
+    }
+  }
+
+  &__description {
+    font-size: $font-size-large;
+    font-weight: $font-weight-light;
+    font-family: $poppins-font;
+    color: $color-white;
+    margin: 10px 0;
+
+    @include breakpoint(1150px) {
+      font-size: $font-size-huge;
+    }
+  }
+
+  &__button {
+    background: $gradient-secondary;
+    color: $color-white;
+    font-family: $poppins-font;
+    font-size: $font-size-regular;
+    font-weight: $font-weight-extra-bold;
+    padding: 10px 20px;
+    border-radius: 5px;
+    margin: 10px 0;
+    text-decoration: none;
+    border: none;
+    width: 242px;
+    height: 50px;
+    cursor: pointer;
+  }
+}

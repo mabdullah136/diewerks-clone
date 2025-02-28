@@ -1,0 +1,100 @@
+@import url("https://fonts.googleapis.com/css2?family=Titanium+Web:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Germania+One&display=swap");
+
+$poppins-font: "Titanium Web", sans-serif;
+$germania-font: "Germania One", serif;
+
+//MOBILE
+//h1 mobile
+$font-size-h1-mobile: 48px;
+$line-height-h1-mobile: 50.4px;
+$font-weight-h1-mobile: 400;
+//h2 mobile
+$font-size-h2-mobile: 36px;
+$line-height-h2-mobile: 36.5px;
+$font-weight-h2-mobile: 400;
+//h3 mobile
+$font-size-h3-mobile: 30px;
+$line-height-h3-mobile: 31.5px;
+$font-weight-h3-mobile: 400;
+//h4 mobile
+$font-size-h4-mobile: 28px;
+$line-height-h4-mobile: 29.4px;
+$font-weight-h4-mobile: 400;
+//h5 mobile
+$font-size-h5-mobile: 22px;
+$line-height-h5-mobile: 23.1px;
+$font-weight-h5-mobile: 400;
+//h6 mobile
+$font-size-h6-mobile: 18px;
+$line-height-h6-mobile: 22.68px;
+$font-weight-h6-mobile: 400;
+
+//Font Weights
+$font-weight-extra-bold: 700;
+$font-weight-extra-bold-S: 600;
+$font-weight-bold: 400;
+$font-weight-semi-bold: 300;
+$font-weight-medium: 200;
+$font-weight-normal: 150;
+$font-weight-light: 100;
+
+//Font Sizes
+$font-size-huge: 24px;
+$font-size-large: 20px;
+$font-size-medium: 18px;
+$font-size-regular: 16px;
+$font-size-small: 14px;
+$font-size-tiny: 12px;
+
+//Desktop
+//h1 desktop
+$font-size-h1-desktop: 128px;
+$line-height-h1-desktop: 134.4px;
+$font-weight-h1-desktop: 400;
+
+//h2 desktop
+$font-size-h2-desktop: 96px;
+$line-height-h2-desktop: 97.2px;
+$font-weight-h2-desktop: 400;
+
+//h3 desktop
+$font-size-h3-desktop: 80px;
+$line-height-h3-desktop: 84px;
+$font-weight-h3-desktop: 400;
+
+//h4 desktop
+$font-size-h4-desktop: 64px;
+$line-height-h4-desktop: 67.2px;
+$font-weight-h4-desktop: 400;
+
+//h5 desktop
+$font-size-h5-desktop: 48px;
+$line-height-h5-desktop: 50.4px;
+$font-weight-h5-desktop: 400;
+
+//h6 desktop
+$font-size-h6-desktop: 36px;
+$line-height-h6-desktop: 37.8px;
+$font-weight-h6-desktop: 400;
+
+//colors
+$color-primary: #081436;
+$color-secondary: #00819e;
+$color-tertiary: #ff0090;
+$color-quaternary: #c831ff;
+
+$color-black: #000000;
+$color-white: #ffffff;
+$color-purple: #6c0094;
+$color-grey: #dbdbdb;
+$color-dark-blue: #001b6e;
+$color-light-pink: #ad0062;
+$color-light-blue: #00d1ff;
+$color-light-purple: #8565c6;
+
+//gradients
+$gradient-primary: linear-gradient(270deg, #ad0062 0%, #00819e 100%);
+$gradient-secondary: linear-gradient(90deg, #00819e 0%, #ad0062 100%);
+$gradient-tertiary: linear-gradient(270deg, #ff0090 0%, #00d1ff 100%);
+$gradient-quaternary: linear-gradient(90deg, #ad0062 0%, #ff0090 100%);

@@ -1,0 +1,86 @@
+.feature-categories-wrapper {
+  display: flex;
+}
+
+.feature-categories-container {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  width: 100%;
+  margin: 10px;
+  overflow: hidden;
+  margin-inline: auto;
+}
+
+.feature-categories-content {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  width: 100%;
+
+  &__wrapper {
+    display: flex;
+    gap: 10px;
+  }
+
+  &__title {
+    font-size: $font-size-h2-mobile;
+    font-weight: $font-weight-h2-mobile;
+    font-family: $germania-font;
+    color: $color-black;
+    margin: 5px 10px;
+  }
+
+  &__categories {
+    display: flex;
+    flex-direction: column;
+    gap: 10px; /* Adds space between items */
+    overflow-x: auto; /* Enables horizontal scrolling */
+    scroll-snap-type: x mandatory; /* Enables smooth scrolling */
+    white-space: nowrap; /* Prevents wrapping */
+    padding: 10px 0; /* Add padding for better visibility */
+    scrollbar-width: none; /* Hides scrollbar for Firefox */
+    margin-inline: 10px;
+
+    &__wrapper {
+      display: flex;
+      gap: 10px;
+    }
+  }
+
+  &__category {
+    flex: 0 0 auto; /* Ensures items don’t shrink */
+    scroll-snap-align: start; /* Aligns items properly */
+
+    &__img {
+      width: 297px; /* Set a fixed width for categories */
+      height: 390px;
+    }
+  }
+
+  &__detail {
+    display: flex;
+    gap: 12px;
+    align-items: flex-start; // Align to the start so icon stays at the top
+    width: 297px;
+    flex-wrap: wrap; // Allows wrapping when needed
+    min-width: 297px;
+
+    &__title {
+      display: flex;
+      gap: 10px;
+      text-decoration: none;
+      font-size: $font-size-large;
+      font-weight: $font-weight-extra-bold-S;
+      color: $color-black;
+      word-break: break-word; // Ensures long words wrap
+      white-space: normal; // Allows text wrapping
+    }
+
+    &__img {
+      width: 16px;
+      flex-shrink: 0; // Prevents the icon from shrinking
+      height: max-content;
+    }
+  }
+}
