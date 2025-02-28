@@ -1,0 +1,229 @@
+.header-wrapper {
+  width: 100%;
+  background-color: $color-white;
+  padding: 15px 20px;
+  border-bottom: 1px solid $color-grey;
+  position: sticky;
+
+  .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  // Hamburger Menu
+  .hamburger {
+    font-size: 24px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    animation: alternate 0.5s ease-in-out;
+  }
+
+  .hamburger-wrapper {
+    border-radius: 50%;
+    border: 2px solid $color-grey; // Reduce border width
+    padding: 1px; // Add spacing inside the border
+    width: 35px;
+    height: 35px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    @include breakpoint(769px) {
+      display: none;
+    }
+  }
+
+  // Logo
+  .logo {
+    width: 102.703px;
+  }
+
+  .logo-wrapper {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+  }
+
+  // Right-side icons
+  .icons-list {
+    display: flex;
+    gap: 5px;
+
+    &__icon-wrapper {
+      position: relative;
+      border-radius: 50%;
+      border: 2px solid $color-grey; // Reduce border width
+      padding: 1px; // Add spacing inside the border
+      width: 35px;
+      height: 35px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      &__search {
+        @include breakpoint(1025px) {
+          display: none;
+        }
+      }
+
+      &__icon {
+        width: 22px;
+        height: 22px;
+        cursor: pointer;
+      }
+
+      &__text {
+        position: absolute;
+        width: 18px;
+        height: 18px;
+        top: -6px;
+        right: -10px;
+        background: $color-dark-blue;
+        color: $color-white;
+        border-radius: 50%;
+        font-size: $font-size-tiny;
+        display: flex;
+        justify-content: center;
+        padding: 3.5px;
+      }
+    }
+  }
+
+  // Nav List
+  .nav-list {
+    display: flex;
+    justify-content: center;
+
+    &__list {
+      display: flex;
+      gap: 15px;
+
+      @include breakpoint(1024px) {
+        gap: 20px;
+      }
+
+      &__item {
+        list-style: none;
+
+        &__link {
+          text-decoration: none;
+          color: $color-black;
+          font-size: $font-size-tiny;
+          white-space: nowrap;
+
+          &__sale {
+            color: $color-light-pink;
+          }
+
+          @include breakpoint(1200px) {
+            font-size: $font-size-regular;
+          }
+        }
+      }
+    }
+  }
+
+  // Mobile Menu Styles
+  .mobile-menu {
+    position: absolute;
+    top: 60px;
+    left: 0;
+    width: 100%;
+    background: $color-white;
+    text-align: left;
+
+    @include breakpoint(769px) {
+      display: none;
+    }
+
+    ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+
+      li {
+        padding: 15px;
+        border-top: 1px solid $color-grey;
+        border-bottom: 1px solid $color-grey;
+
+        a {
+          text-decoration: none;
+          color: $color-black;
+          font-size: 18px;
+        }
+      }
+    }
+  }
+}
+
+.icons-and-search-parent-wrapper {
+  display: flex;
+  gap: 20px;
+}
+
+.nav-and-search-wrapper {
+  display: flex;
+  gap: 35px;
+}
+
+.nav-wrapper {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+
+  &__li {
+    position: relative;
+    list-style: none;
+    &__a {
+      text-decoration: none;
+      font-weight: 100;
+      color: $color-black;
+      font-size: $font-size-small;
+      white-space: nowrap;
+    }
+
+    &__img {
+      position: absolute;
+      right: -16px;
+      top: 5px;
+      width: 15px;
+      height: 7px;
+    }
+  }
+}
+
+.search-wrapper {
+  display: flex;
+  position: relative;
+}
+
+.search {
+  display: flex;
+  width: 165px;
+  height: 35px;
+  margin: 1px;
+  padding: 10px;
+  border: 2px solid $color-grey;
+  border-radius: 25px;
+  font-size: $font-size-small;
+}
+
+.search-image {
+  position: absolute;
+  right: 10px;
+  top: 8px;
+  width: 22px;
+  height: 22px;
+}
+
+//animation
+@keyframes alternate {
+  0% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(1.5);
+  }
+}

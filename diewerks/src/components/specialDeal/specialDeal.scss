@@ -1,0 +1,35 @@
+.specialDeal__wrapper {
+  width: 100%;
+  background: $gradient-secondary;
+  height: auto;
+  border-image-source: $gradient-tertiary;
+  border-block: 3px solid;
+  border-image-slice: 1;
+}
+
+.specialDeal__container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  padding: 10px;
+}
+
+.specialDeal__content__wrapper {
+  display: flex;
+}
+
+.specialDeal__content__wrapper__text {
+  display: flex;
+  font-size: $font-size-small;
+  color: $color-white;
+
+  @include breakpoint(769px) {
+    font-size: $font-size-regular;
+  }
+}
+
+.specialDeal__link__wrapper__text {
+  font-size: $font-size-tiny;
+  color: $color-white;
+}

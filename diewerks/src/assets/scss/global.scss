@@ -1,0 +1,7 @@
+@import "./customerGlobal.scss";
+
+@mixin breakpoint($size) {
+  @media (min-width: $size) {
+    @content;
+  }
+}
