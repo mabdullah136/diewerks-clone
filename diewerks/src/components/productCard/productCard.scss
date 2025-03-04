@@ -1,0 +1,171 @@
+.product-card-wrapper {
+  display: flex;
+  justify-content: center;
+}
+
+.product-card-container {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  width: 100%;
+  margin: 10px;
+  overflow: hidden;
+  margin-inline: 10px;
+
+  &__head {
+    display: flex;
+    gap: 10px;
+
+    &__title {
+      font-size: $font-size-h2-mobile;
+      font-weight: $font-weight-h2-mobile;
+      font-family: $germania-font;
+      color: $color-black;
+    }
+  }
+
+  &__category {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+
+    &__linka {
+      display: flex;
+      background-color: $color-black;
+      gap: 10px;
+      border-radius: 4px;
+      border: 1px solid $color-black;
+      transition: color 0.3s ease, background-color 0.3s ease;
+
+      &:hover {
+        background-color: $color-white;
+      }
+
+      &__a {
+        color: $color-white;
+        text-decoration: none;
+        font-weight: 100;
+        font-size: $font-size-small;
+        white-space: nowrap;
+        padding: 10px 10px;
+        font-weight: $font-weight-extra-bold-S;
+        font-family: $poppins-font;
+        transition: color 0.3s ease, background-color 0.3s ease;
+        &:hover {
+          color: $color-black;
+        }
+      }
+    }
+
+    &__linkb {
+      display: flex;
+      gap: 10px;
+      border-radius: 4px;
+      border: 1px solid $color-black;
+      transition: color 0.3s ease, background-color 0.3s ease;
+      &:hover {
+        background-color: $color-black;
+      }
+
+      &__b {
+        color: $color-black;
+        text-decoration: none;
+        font-weight: 100;
+        font-size: $font-size-small;
+        white-space: nowrap;
+        padding: 10px 10px;
+        font-weight: $font-weight-extra-bold-S;
+        font-family: $poppins-font;
+        transition: color 0.3s ease, background-color 0.3s ease;
+        &:hover {
+          color: $color-white;
+        }
+      }
+    }
+  }
+
+  &__card {
+    display: flex;
+    gap: 10px;
+    overflow-x: auto; /* Enables horizontal scrolling */
+    scroll-snap-type: x mandatory; /* Enables smooth scrolling */
+    scroll-behavior: smooth; /* Smooth scrolling effect */
+    -webkit-overflow-scrolling: touch; /* Improves scrolling on mobile */
+    scrollbar-width: none; /* Hides scrollbar for Firefox */
+    position: relative;
+
+    &__wrapper {
+      display: flex;
+      gap: 10px;
+      flex-direction: column;
+    }
+
+    &__image {
+      display: flex;
+      gap: 10px;
+      width: 242px;
+      flex-direction: column;
+      position: relative;
+
+      &__img {
+        height: 292px;
+      }
+
+      &__wishlist {
+        position: absolute;
+        height: 35px;
+        width: 35px;
+        right: 5%;
+        bottom: 88%;
+        position: absolute;
+      }
+    }
+
+    &__content {
+      display: flex;
+      gap: 10px;
+
+      &__parent {
+        display: flex;
+        gap: 10px;
+        flex-direction: column;
+        width: 242px;
+      }
+
+      &__title {
+        display: flex;
+        gap: 10px;
+        text-decoration: none;
+        font-size: $font-size-regular;
+        font-weight: $font-weight-extra-bold-S;
+        font-family: $poppins-font;
+      }
+
+      &__price {
+        display: flex;
+        gap: 10px;
+        font-size: $font-size-regular;
+        font-weight: $font-weight-extra-bold-S;
+        font-family: $poppins-font;
+      }
+
+      &__wrapper {
+        display: flex;
+        gap: 10px;
+        justify-content: space-between;
+
+        &__brand {
+          display: flex;
+          gap: 10px;
+
+          &__name {
+            font-size: $font-size-small;
+            font-weight: $font-weight-semi-bold;
+            font-family: $poppins-font;
+            color: $color-dark-grey;
+          }
+        }
+      }
+    }
+  }
+}

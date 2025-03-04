@@ -1,0 +1,91 @@
+.shopNow-container {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-block: 35px;
+  flex-direction: column;
+  margin-inline: 10px;
+  max-width: 1400px;
+
+  @include breakpoint(1200px) {
+    flex-direction: row;
+  }
+
+  @include breakpoint(1400px) {
+    margin-inline: auto;
+  }
+}
+
+.shopNow-wrapper {
+  display: flex;
+  gap: 10px;
+  flex-direction: column;
+  width: 100%;
+
+  &__heading1 {
+    display: flex;
+
+    &__title {
+      color: $color-black;
+      font-size: $font-size-small;
+      font-weight: $font-weight-bold;
+      font-family: $poppins-font;
+    }
+  }
+
+  &__heading2 {
+    display: flex;
+
+    &__title {
+      color: $color-black;
+      font-size: $font-size-huge;
+      font-weight: $font-weight-extra-bold;
+      font-family: $germania-font;
+    }
+  }
+
+  &__image-button-wrapper {
+    display: flex;
+    gap: 10px;
+    position: relative;
+    width: 100%;
+
+    &__image {
+      height: 312px;
+      width: 100%;
+      transition: height 0.3s ease;
+      //   object-fit: cover;
+
+      @include breakpoint(600px) {
+        height: 620px;
+      }
+    }
+
+    &__button-wrapper {
+      position: absolute;
+      background-color: $color-white;
+      display: flex;
+      gap: 10px;
+      border-radius: 4px;
+      transition: color 0.3s ease, background-color 0.3s ease;
+      bottom: 20px;
+      left: 20px;
+      border: none;
+
+      &__link {
+        color: $gradient-primary;
+        text-decoration: none;
+        font-weight: 100;
+        font-size: $font-size-small;
+        white-space: nowrap;
+        padding: 10px 50px;
+        font-weight: $font-weight-extra-bold-S;
+        font-family: $poppins-font;
+        transition: color 0.3s ease, background-color 0.3s ease;
+        &:hover {
+          color: $color-black;
+        }
+      }
+    }
+  }
+}
