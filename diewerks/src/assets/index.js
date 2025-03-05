@@ -28,6 +28,13 @@ import bike from "./images/featureCategories/bike.svg";
 import card from "./images/featureCategories/card.jpg";
 import ducati from "./images/featureCategories/ducati.jpg";
 
+//productCard
+import wishlistIcon from "./images/productCard/wishlistIcon.svg";
+
+//useFull
+import bikeBackground from "./images/useFull/bikeBackground.png";
+import pinkFlashIcon from "./images/useFull/pinkFlashIcon.svg";
+
 const images = {
   //header
   logo,
@@ -55,6 +62,11 @@ const images = {
   bike,
   card,
   ducati,
+  //productCard
+  wishlistIcon,
+  //useFull
+  bikeBackground,
+  pinkFlashIcon,
 };
 
 export default images;
