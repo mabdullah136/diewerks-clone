@@ -30,6 +30,10 @@
       font-size: $font-size-small;
       font-weight: $font-weight-bold;
       font-family: $poppins-font;
+
+      @include breakpoint(1020px) {
+        font-size: $font-size-medium;
+      }
     }
   }
 
@@ -41,6 +45,10 @@
       font-size: $font-size-huge;
       font-weight: $font-weight-extra-bold;
       font-family: $germania-font;
+
+      @include breakpoint(1020px) {
+        font-size: $font-size-h6-desktop;
+      }
     }
   }
 

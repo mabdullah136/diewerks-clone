@@ -1,0 +1,43 @@
+// .dynamic-text-container {
+//   display: flex;
+//   //   margin-inline: 30px;
+// }
+
+// .dynamic-text-wrapper {
+//   display: flex;
+//   flex-direction: column;
+//   gap: 20px;
+//   max-width: 1400px;
+//   margin-block: 35px;
+//   margin-inline: auto;
+
+//   &__heading {
+//     display: flex;
+
+//     &__title {
+//       color: $color-black;
+//       font-size: $font-size-small;
+//       font-weight: $font-weight-bold;
+//       font-family: $germania-font;
+
+//       @include breakpoint(1020px) {
+//         font-size: $font-size-medium;
+//       }
+//     }
+//   }
+
+//   &__content {
+//     display: flex;
+
+//     &__text {
+//       color: $color-black;
+//       font-size: $font-size-small;
+//       font-weight: $font-weight-normal;
+//       font-family: $poppins-font;
+
+//       @include breakpoint(1020px) {
+//         font-size: $font-size-medium;
+//       }
+//     }
+//   }
+// }

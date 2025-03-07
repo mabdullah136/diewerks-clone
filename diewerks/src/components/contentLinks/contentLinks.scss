@@ -1,0 +1,107 @@
+.content-links {
+  display: flex;
+  max-width: 1400px;
+  margin-inline: auto;
+  margin-block: 35px;
+}
+
+.content-links-container {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  gap: 30px;
+  padding-inline: 10px;
+
+  &__1 {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    justify-content: center;
+
+    &__image {
+      display: flex;
+
+      &__img {
+        width: 22.213px;
+        height: 35px;
+      }
+    }
+
+    &__line {
+      display: flex;
+      height: 2px;
+      background-image: $gradient-tertiary;
+      flex-grow: 1;
+      align-items: center;
+    }
+  }
+
+  &__2 {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    flex-wrap: wrap;
+    row-gap: 40px;
+
+    @include breakpoint(890px) {
+      justify-content: space-between;
+    }
+
+    &__parent {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+      flex-basis: 430px;
+      flex-grow: 1;
+
+      &__heading {
+        font-size: $font-size-h4-mobile;
+        font-weight: $font-weight-h4-mobile;
+        line-height: $line-height-h4-mobile;
+        font-family: $germania-font;
+
+        & span {
+          font-family: inherit;
+        }
+        & span .blue {
+          font-family: inherit;
+          color: $color-secondary;
+        }
+      }
+
+      &__content {
+        font-size: $font-size-medium;
+        font-weight: $font-weight-normal;
+        line-height: 20px;
+        font-family: $poppins-font;
+      }
+
+      &__link {
+        font-size: $font-size-medium;
+        font-weight: $font-weight-bold;
+        line-height: 20px;
+        font-family: $poppins-font;
+        color: $color-secondary;
+        text-decoration: none;
+        border-bottom: 1px solid $color-secondary;
+        width: fit-content;
+        padding-bottom: 5px;
+      }
+    }
+  }
+
+  &__3 {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    justify-content: center;
+
+    &__line {
+      display: flex;
+      height: 2px;
+      background-image: $gradient-tertiary;
+      flex-grow: 1;
+      align-items: center;
+    }
+  }
+}

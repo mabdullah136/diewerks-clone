@@ -1,0 +1,43 @@
+.background-card {
+  width: 100%;
+  max-width: 1400px;
+  margin-inline: auto;
+}
+
+.background-card-container {
+  display: flex;
+}
+
+.background-card-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin: 20px;
+
+  @include breakpoint(1400px) {
+    margin-block: 20px;
+    margin-inline: 0px;
+  }
+
+  &__heading {
+    display: flex;
+
+    &__title {
+      color: $color-white;
+      font-size: $font-size-small;
+      font-weight: $font-weight-bold;
+      font-family: $poppins-font;
+
+      @include breakpoint(1020px) {
+        font-size: $font-size-regular;
+      }
+    }
+  }
+
+  &__content {
+    display: flex;
+    background-color: $color-white;
+    padding: 10px;
+    border-radius: 10px;
+  }
+}

@@ -68,7 +68,7 @@ function Header() {
                   </a>
                 </li>
                 <li className="nav-list__list__item">
-                  <a href="/about" className="nav-list__list__item__link">
+                  <a href="/aboutUs" className="nav-list__list__item__link">
                     BIKE PARTS
                   </a>
                 </li>
@@ -101,7 +101,7 @@ function Header() {
             {isDesktop && (
               <div className="nav-wrapper">
                 <li className="nav-wrapper__li">
-                  <a href="/" className="nav-wrapper__li__a">
+                  <a href="/aboutUs" className="nav-wrapper__li__a">
                     About Us
                   </a>
                 </li>

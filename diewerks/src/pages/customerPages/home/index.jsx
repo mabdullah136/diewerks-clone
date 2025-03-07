@@ -7,6 +7,8 @@ import FeatureCategories from "../../../components/featureCategories";
 import ProductCard from "../../../components/productCard";
 import TextContainer from "../../../components/textContainer";
 import ShopNow from "../../../components/shopNow";
+import BackgroundCard from "../../../components/backgroundCard";
+import ContentLinks from "../../../components/contentLinks";
 import "./home.scss";
 import images from "../../../assets";
 
@@ -24,6 +26,10 @@ const Home = () => {
         </div>
       </div>
       <ShopNow />
+      <div className="background_container">
+        <BackgroundCard />
+      </div>
+      <ContentLinks />
       <Footer />
     </>
   );

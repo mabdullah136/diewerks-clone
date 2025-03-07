@@ -35,6 +35,9 @@ import wishlistIcon from "./images/productCard/wishlistIcon.svg";
 import bikeBackground from "./images/useFull/bikeBackground.png";
 import pinkFlashIcon from "./images/useFull/pinkFlashIcon.svg";
 
+//backgroundCard
+import backgroundCard from "./images/backgroundCard/backgroundCard.png";
+
 const images = {
   //header
   logo,
@@ -67,6 +70,8 @@ const images = {
   //useFull
   bikeBackground,
   pinkFlashIcon,
+  //backgroundCard
+  backgroundCard,
 };
 
 export default images;
